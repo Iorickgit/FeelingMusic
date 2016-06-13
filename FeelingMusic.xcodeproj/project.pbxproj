@@ -14,6 +14,9 @@
 		894308851D0DDBB4009ED983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894308831D0DDBB4009ED983 /* LaunchScreen.storyboard */; };
 		894308901D0DDBB4009ED983 /* FeelingMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943088F1D0DDBB4009ED983 /* FeelingMusicTests.swift */; };
 		8943089B1D0DDBB4009ED983 /* FeelingMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8943089A1D0DDBB4009ED983 /* FeelingMusicUITests.swift */; };
+		894308A91D0E5DFE009ED983 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894308A81D0E5DFE009ED983 /* Music.swift */; };
+		894308AD1D0E6023009ED983 /* SoundCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894308AC1D0E6023009ED983 /* SoundCloud.swift */; };
+		894308B11D0E60FD009ED983 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894308B01D0E60FD009ED983 /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		894308961D0DDBB4009ED983 /* FeelingMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelingMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8943089A1D0DDBB4009ED983 /* FeelingMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingMusicUITests.swift; sourceTree = "<group>"; };
 		8943089C1D0DDBB4009ED983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894308A81D0E5DFE009ED983 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		894308AC1D0E6023009ED983 /* SoundCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundCloud.swift; sourceTree = "<group>"; };
+		894308B01D0E60FD009ED983 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,8 @@
 		894308791D0DDBB4009ED983 /* FeelingMusic */ = {
 			isa = PBXGroup;
 			children = (
-				8943087A1D0DDBB4009ED983 /* AppDelegate.swift */,
-				8943087C1D0DDBB4009ED983 /* ViewController.swift */,
-				8943087E1D0DDBB4009ED983 /* Main.storyboard */,
-				894308811D0DDBB4009ED983 /* Assets.xcassets */,
-				894308831D0DDBB4009ED983 /* LaunchScreen.storyboard */,
-				894308861D0DDBB4009ED983 /* Info.plist */,
+				894308B21D0E6105009ED983 /* UI */,
+				894308AF1D0E60D2009ED983 /* Class */,
 			);
 			path = FeelingMusic;
 			sourceTree = "<group>";
@@ -123,6 +125,29 @@
 				8943089C1D0DDBB4009ED983 /* Info.plist */,
 			);
 			path = FeelingMusicUITests;
+			sourceTree = "<group>";
+		};
+		894308AF1D0E60D2009ED983 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				894308A81D0E5DFE009ED983 /* Music.swift */,
+				894308AC1D0E6023009ED983 /* SoundCloud.swift */,
+				894308B01D0E60FD009ED983 /* Setting.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		894308B21D0E6105009ED983 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8943087A1D0DDBB4009ED983 /* AppDelegate.swift */,
+				8943087C1D0DDBB4009ED983 /* ViewController.swift */,
+				8943087E1D0DDBB4009ED983 /* Main.storyboard */,
+				894308811D0DDBB4009ED983 /* Assets.xcassets */,
+				894308831D0DDBB4009ED983 /* LaunchScreen.storyboard */,
+				894308861D0DDBB4009ED983 /* Info.plist */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894308B11D0E60FD009ED983 /* Setting.swift in Sources */,
 				8943087D1D0DDBB4009ED983 /* ViewController.swift in Sources */,
 				8943087B1D0DDBB4009ED983 /* AppDelegate.swift in Sources */,
+				894308AD1D0E6023009ED983 /* SoundCloud.swift in Sources */,
+				894308A91D0E5DFE009ED983 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +512,7 @@
 				894308A11D0DDBB4009ED983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		894308A21D0DDBB4009ED983 /* Build configuration list for PBXNativeTarget "FeelingMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +521,7 @@
 				894308A41D0DDBB4009ED983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		894308A51D0DDBB4009ED983 /* Build configuration list for PBXNativeTarget "FeelingMusicUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +530,7 @@
 				894308A71D0DDBB4009ED983 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
