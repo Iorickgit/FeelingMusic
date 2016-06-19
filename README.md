@@ -1,6 +1,6 @@
-# FeelingMusic
+# Muxact　(Music + Exact)
 
-###仕様書 Muxact　(Music + Exact)
+#仕様書
 
 ##1 サービス概要
 
