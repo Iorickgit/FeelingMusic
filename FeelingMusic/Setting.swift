@@ -11,8 +11,8 @@ import UIKit
 
 class Feeling{
     
-    var Concentration: Int!
-    var Mood: Int!
+    var Concentration: CGPoint!
+    var Mood: CGPoint!
     var Brightness: String!
     var favGenre: [String] = []
     let setting = NSUserDefaults.standardUserDefaults()

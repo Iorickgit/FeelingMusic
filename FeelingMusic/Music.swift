@@ -9,12 +9,11 @@
 import Foundation
 import UIKit
 
-class Music{
+class Music: Feeling{
     
     var musicTitle: String!
     var musicArtist: String!
     var musicAlbum: String!
     var musicArtwork: UIImage!
-    var playlist: [String] = []
     
 }

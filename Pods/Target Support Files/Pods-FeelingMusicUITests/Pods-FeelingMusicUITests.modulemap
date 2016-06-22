@@ -1,0 +1,6 @@
+framework module Pods_FeelingMusicUITests {
+  umbrella header "Pods-FeelingMusicUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
